@@ -1,0 +1,181 @@
+/* ============================================
+   LEAGUE & LEGACY — GLOBAL STYLESHEET
+   Brand system foundation. Every page imports this.
+   ============================================ */
+
+/* --- GOOGLE FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Great+Vibes&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400&display=swap');
+
+/* --- CSS VARIABLES (Brand Tokens) --- */
+:root {
+  /* Colors */
+  --color-bg:        #0D0D0D;
+  --color-white:     #FFFFFF;
+  --color-coral:     #FF6B6B;
+
+  /* Living accent palette — one per featured woman */
+  --accent-robbin:   #39D98A;  /* Robbin Juarez — MLS */
+  --accent-chiara:   #7EC8E3;  /* Chiara D'Amato — Minor League Baseball */
+  --accent-purple:   #9B5DE5;  /* reserved */
+  --accent-amber:    #FFB347;  /* reserved */
+  --accent-pink:     #FF8FAB;  /* reserved */
+
+  /* Typography */
+  --font-headline:   'Oswald', sans-serif;
+  --font-script:     'Great Vibes', cursive;
+  --font-label:      'Space Mono', monospace;
+  --font-body:       'DM Sans', sans-serif;
+
+  /* Type scale */
+  --text-hero:       clamp(64px, 14vw, 140px);
+  --text-amp:        clamp(80px, 17vw, 170px);
+  --text-h2:         clamp(32px, 5vw, 56px);
+  --text-h3:         clamp(22px, 3vw, 32px);
+  --text-label:      11px;
+  --text-body:       16px;
+  --text-small:      13px;
+
+  /* Spacing */
+  --space-xs:        8px;
+  --space-sm:        16px;
+  --space-md:        32px;
+  --space-lg:        64px;
+  --space-xl:        120px;
+
+  /* Layout */
+  --max-width:       1280px;
+  --radius-sm:       4px;
+  --radius-md:       8px;
+
+  /* Transitions */
+  --transition:      0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* --- RESET --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* --- UTILITY CLASSES --- */
+
+/* Typography */
+.u-headline {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+}
+
+.u-label {
+  font-family: var(--font-label);
+  font-size: var(--text-label);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.u-body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.u-amp {
+  font-family: var(--font-script);
+  color: var(--color-coral);
+  line-height: 1;
+}
+
+/* B&W photo treatment — applied via CSS filter */
+.u-bw {
+  filter: grayscale(100%) contrast(1.05);
+  transition: filter var(--transition-slow);
+}
+
+.u-bw:hover {
+  filter: grayscale(0%) contrast(1);
+}
+
+/* Coral accent text */
+.u-coral {
+  color: var(--color-coral);
+}
+
+/* Visually hidden (accessibility) */
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+
+/* --- REDUCED MOTION --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- SELECTION COLOR --- */
+::selection {
+  background: var(--color-coral);
+  color: var(--color-bg);
+}

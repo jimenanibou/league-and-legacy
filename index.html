@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="League & Legacy — A multimedia platform telling the stories of the women behind professional sports.">
+  <title>League & Legacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Great+Vibes&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <img class="hero__photo" src="images/hero.jpg" alt="Jimena, founder of League & Legacy">
+    <div class="hero__overlay"></div>
+    <nav class="hero__nav" aria-label="Main navigation">
+      <ul class="hero__nav-links">
+        <li><a href="#features" class="hero__nav-link">Features</a></li>
+        <li><a href="#about" class="hero__nav-link">About</a></li>
+        <li><a href="#connect" class="hero__nav-link">Connect</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <span class="hero__title">LEAGUE</span>
+      <span class="hero__amp">&</span>
+      <span class="hero__title">LEGACY</span>
+      <p class="hero__tagline">A multimedia platform dedicated to the women building professional sports from the inside.</p>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span class="ticker__item">THE WOMEN IN SPORT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">AND THE WOMEN BEHIND IT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">THE WOMEN IN SPORT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">AND THE WOMEN BEHIND IT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">THE WOMEN IN SPORT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">AND THE WOMEN BEHIND IT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">THE WOMEN IN SPORT.</span>
+      <span class="ticker__sep">✦</span>
+      <span class="ticker__item">AND THE WOMEN BEHIND IT.</span>
+      <span class="ticker__sep">✦</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="features__header">
+      <h2 class="features__title">Features</h2>
+    </div>
+    <div class="features__grid">
+
+      <!-- Robbin Juarez -->
+      <article class="card" onclick="openOverlay('robbin')" role="button" tabindex="0" aria-label="Read Robbin Juarez's story">
+        <div class="card__photo-wrap">
+          <img class="card__photo" src="images/robbin-card.jpg" alt="Robbin Juarez">
+          <div class="card__accent" style="background: var(--accent-robbin);"></div>
+        </div>
+        <div class="card__body">
+          <div class="card__league" style="color: var(--accent-robbin);">MLS</div>
+          <div class="card__number">Feature No. 001</div>
+          <h3 class="card__name">ROBBIN<br>JUAREZ</h3>
+          <p class="card__role">Payroll & Benefits Manager<br>Orlando City SC + Orlando Pride</p>
+          <span class="card__sticky" style="background: var(--accent-robbin);">"As long as you stay true to who you are, you're always winning."</span>
+        </div>
+        <span class="card__cta" aria-hidden="true">Read her story →</span>
+      </article>
+
+      <!-- Chiara D'Amato -->
+      <article class="card" onclick="openOverlay('chiara')" role="button" tabindex="0" aria-label="Read Chiara D'Amato's story">
+        <div class="card__photo-wrap">
+          <img class="card__photo" src="images/chiara-card.jpg" alt="Chiara D'Amato">
+          <div class="card__accent" style="background: var(--accent-chiara);"></div>
+        </div>
+        <div class="card__body">
+          <div class="card__league" style="color: var(--accent-chiara);">Minor League Baseball</div>
+          <div class="card__number">Feature No. 002</div>
+          <h3 class="card__name">CHIARA<br>D'AMATO</h3>
+          <p class="card__role">Social Media Coordinator<br>Rocket City Trash Pandas</p>
+          <span class="card__sticky" style="background: var(--accent-chiara);">"The right people will value your hustle."</span>
+        </div>
+        <span class="card__cta" aria-hidden="true">Read her story →</span>
+      </article>
+
+      <!-- Coming Soon -->
+      <div class="card card--coming-soon" aria-hidden="true">
+        <div class="card--coming-soon__inner">
+          <span class="card--coming-soon__label">Next feature</span>
+          <div class="card--coming-soon__title">COMING<br>SOON</div>
+        </div>
+      </div>
+
+    </div><!-- end features__grid -->
+  </section><!-- end features -->
+  <section class="about" id="about">
+    <div class="about__photo-wrap">
+      <img class="about__photo" src="images/about.jpg" alt="Jimena, founder of League & Legacy">
+    </div>
+    <div class="about__text">
+      <p class="about__eyebrow">The founder</p>
+      <h2 class="about__headline">Built from the inside out</h2>
+      <div class="about__divider"></div>
+      <div class="about__body">
+        <p>I am Jimena. My work has always lived at the intersection of sport, technology, and storytelling. Right now that looks like building digital experiences at NASCAR. Before that it was Orlando City Soccer and Orlando Pride, where I first started noticing something I could not unsee.</p>
+        <p>Professional sports run on people most fans never hear about. The payroll managers, the social coordinators, the strategists, the photographers. The ones who show up before the crowd arrives and stay long after the final whistle. Extraordinary people doing extraordinary work in complete anonymity.</p>
+        <p>League & Legacy exists to change that. Not as a cause. As a record. These women earned their seat at the table and their stories deserve to be told.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section class="connect" id="connect">
+    <div class="connect__header">
+      <p class="connect__eyebrow">Get in touch</p>
+      <h2 class="connect__title">This project has a door for you.</h2>
+    </div>
+    <div class="connect__grid">
+      <button class="connect__option" onclick="selectOption(this, 'share')">
+        <span class="connect__option-label">Share my story</span>
+        <span class="connect__option-desc">You have a story worth telling</span>
+      </button>
+      <button class="connect__option" onclick="selectOption(this, 'nominate')">
+        <span class="connect__option-label">Nominate someone</span>
+        <span class="connect__option-desc">Know someone we should feature</span>
+      </button>
+      <button class="connect__option" onclick="selectOption(this, 'collaborate')">
+        <span class="connect__option-label">Collaborate</span>
+        <span class="connect__option-desc">Brands, partners, creatives</span>
+      </button>
+      <button class="connect__option" onclick="selectOption(this, 'press')">
+        <span class="connect__option-label">Press inquiry</span>
+        <span class="connect__option-desc">Media and editorial requests</span>
+      </button>
+    </div>
+    <form class="connect__form" action="https://formsubmit.co/leagueandlegacy.official@gmail.com" method="POST">
+      <input type="hidden" name="_subject" id="form-subject" value="League & Legacy — Share my story">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="">
+      <div class="connect__form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="First and last name" required>
+      </div>
+      <div class="connect__form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="connect__form-group">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..."></textarea>
+      </div>
+      <button type="submit" class="connect__submit">Send it →</button>
+    </form>
+  </section>
+
+  <!-- ACADEMY TEASER -->
+  <section class="academy-teaser">
+    <div class="academy-teaser__left">
+      <p class="academy-teaser__eyebrow">Coming soon</p>
+      <h2 class="academy-teaser__title">League & Legacy<br>Academy</h2>
+      <p class="academy-teaser__body">Some women know they want to work in sports. They just do not know how to get there yet. League & Legacy Academy is being built for them. A resource and mentorship space for women in college who are serious about building a career in the sports industry.</p>
+    </div>
+    <span class="academy-teaser__badge">In development</span>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__logo">
+      League <span class="footer__logo-amp">&</span> Legacy
+    </div>
+    <p class="footer__copy">© 2025 League & Legacy</p>
+  </footer>
+
+
+  <!-- ROBBIN OVERLAY -->
+  <div class="overlay" id="overlay-robbin" aria-hidden="true" role="dialog" aria-label="Robbin Juarez feature story">
+    <button class="overlay__close" onclick="closeOverlay()" aria-label="Close story">Close</button>
+    <div class="overlay__photos" id="robbin-slides">
+
+      <!-- Slide 1: Full story -->
+      <div class="overlay__photo-slide--story">
+        <div class="overlay__story">
+          <p class="overlay__story-eyebrow" style="color: var(--accent-robbin);">Feature No. 001 — MLS</p>
+          <h2 class="overlay__story-name">ROBBIN<br>JUAREZ</h2>
+          <p class="overlay__story-role">Payroll & Benefits Manager, Orlando City SC + Orlando Pride</p>
+          <div class="overlay__story-body">
+            <p>She did not grow up knowing this world was accessible to her.</p>
+            <p>Growing up in Section 8 housing, raised by an immigrant mother who was still learning English while Robbin was learning Spanish so they could talk to each other, career planning was not part of the conversation. Survival was. The opportunities that exist in professional sports, the networking, the mentorship, the resources, none of that was on her radar. She did not know this world had a place for someone like her.</p>
+            <p>When a serious car accident ended her plans to become a nurse, she did not stop. She pivoted. She realized that advocacy does not only happen in hospitals. It can happen in workplaces too. That realization led her into Human Resources and eventually to Orlando City Soccer and Orlando Pride, where she has spent the last four years as Payroll and Benefits Manager making sure every single employee feels supported enough to show up and do their best work.</p>
+            <p>What that job actually looks like is something most people never think about. She walks alongside team members through some of the most personal moments of their lives. Parental leave, workplace injuries, loss, grief. She helps international employees navigate the U.S. benefits system for the first time. She built a paid associate program from the ground up that now converts 80 percent of participants into full time roles.</p>
+            <p>The moment that made everything feel worth it had nothing to do with any of that.</p>
+            <p>Her brother still carries her very first business card in his wallet. Not her current title. The first one.</p>
+          </div>
+          <blockquote class="overlay__story-quote" style="border-color: var(--accent-robbin); color: var(--accent-robbin);">
+            "Seeing that card still sitting in his wallet after all this time reminded me that the people closest to me are not only happy for me. They're proud of me."
+          </blockquote>
+          <div class="overlay__story-body">
+            <p>For someone who grew up the way she did, that card is everything.</p>
+            <p>When asked what she would tell a young woman who wants to work in professional sports but does not know if there is space for her, her answer came without hesitation.</p>
+          </div>
+          <blockquote class="overlay__story-quote" style="border-color: var(--accent-robbin); color: var(--accent-robbin);">
+            "Apply anyway. Make space for yourself. Have the uncomfortable conversations. And remember that getting in is only part of it. Once you're there, reach back."
+          </blockquote>
+          <div class="overlay__story-body">
+            <p>She closes with the words her mother always gave her.</p>
+            <p><em>Ponte las pilas.</em> There is work to do.</p>
+            <p>This is Robbin Juarez.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Hero photo -->
+      <div class="overlay__photo-slide">
+        <img src="images/robbin-card.jpg" alt="Robbin Juarez">
+        <span class="overlay__photo-caption">Robbin Juarez — MLS</span>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="overlay__photo-slide">
+        <img src="images/robbin-1.jpg" alt="Robbin Juarez with the US Open Cup">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="overlay__photo-slide">
+        <img src="images/robbin-2.jpg" alt="Robbin Juarez with Orlando City team">
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="overlay__photo-slide">
+        <img src="images/robbin-3.jpg" alt="Robbin Juarez">
+      </div>
+
+    </div>
+    <div class="overlay__dots" id="robbin-dots"></div>
+    <span class="overlay__scroll-hint" aria-hidden="true">Swipe to explore</span>
+  </div>
+
+
+  <!-- CHIARA OVERLAY -->
+  <div class="overlay" id="overlay-chiara" aria-hidden="true" role="dialog" aria-label="Chiara D'Amato feature story">
+    <button class="overlay__close" onclick="closeOverlay()" aria-label="Close story">Close</button>
+    <div class="overlay__photos" id="chiara-slides">
+
+      <!-- Slide 1: Full story -->
+      <div class="overlay__photo-slide--story">
+        <div class="overlay__story">
+          <p class="overlay__story-eyebrow" style="color: var(--accent-chiara);">Feature No. 002 — Minor League Baseball</p>
+          <h2 class="overlay__story-name">CHIARA<br>D'AMATO</h2>
+          <p class="overlay__story-role">Social Media Coordinator, Rocket City Trash Pandas</p>
+          <div class="overlay__story-body">
+            <p>She applied to over 50 jobs before she landed this one. And she would do it all over again.</p>
+            <p>Chiara D'Amato shows up to the ballpark three hours before first pitch every single game day. Before the crowd arrives, before the players take the field, before anyone is watching, she is already working. Creating the lineup graphic, figuring out what story she is going to tell that night and how she is going to tell it. Some days she is down on the field filming every at bat. Other days she is up in the press box keeping score herself. And somewhere in between all of that she is mixing in photography just to scratch that itch.</p>
+            <p>She did not find this path. She built it herself by showing up to baseball practice at her university one day and just starting. Nobody asked her to. She picked up a camera, fell in love immediately and became the unofficial official team photographer. The coaching staff and players always made her feel welcome and that environment gave her something she had not expected. A direction.</p>
+            <p>The moment that made everything real happened just a few weeks ago. A player she had photographed sitting in the dugout the day before got called up to the big leagues and started the very next day. She went home, turned on the game and watched him play, knowing she had been there the day before it all changed for him.</p>
+            <p>That was her moment. The realization that she had captured his story before anyone else even knew it was worth telling.</p>
+          </div>
+          <blockquote class="overlay__story-quote" style="border-color: var(--accent-chiara); color: var(--accent-chiara);">
+            "To be able to capture part of that journey is so special to me and I am so grateful for the opportunity to do so."
+          </blockquote>
+          <div class="overlay__story-body">
+            <p>Her advice to the young woman who wants to be where she is is honest and direct.</p>
+          </div>
+          <blockquote class="overlay__story-quote" style="border-color: var(--accent-chiara); color: var(--accent-chiara);">
+            "If you don't think there's room for you in this industry, then you're lying to yourself. Every rejection is just redirection toward the job that is meant for you."
+          </blockquote>
+          <div class="overlay__story-body">
+            <p>She got here by showing up before anyone asked her to. That is still exactly what she does.</p>
+            <p>This is Chiara D'Amato.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Hero photo -->
+      <div class="overlay__photo-slide">
+        <img src="images/chiara-card.jpg" alt="Chiara D'Amato">
+        <span class="overlay__photo-caption">Chiara D'Amato — Minor League Baseball</span>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="overlay__photo-slide">
+        <img src="images/chiara-1.jpg" alt="Chiara D'Amato at the ballpark">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="overlay__photo-slide">
+        <img src="images/chiara-2.jpg" alt="Chiara D'Amato with camera">
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="overlay__photo-slide">
+        <img src="images/chiara-3.jpg" alt="Player in the dugout — photographed by Chiara">
+      </div>
+
+    </div>
+    <div class="overlay__dots" id="chiara-dots"></div>
+    <span class="overlay__scroll-hint" aria-hidden="true">Swipe to explore</span>
+  </div>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
