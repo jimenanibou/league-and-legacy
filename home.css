@@ -74,8 +74,8 @@
 @media (max-width: 768px) {
   .hero__amp {
     font-size: clamp(64px, 18vw, 100px);
-    margin: 0 0 -20px 0;
-    padding: 14px 0 0;
+    margin: 0 0 -8px 0;
+    padding: 16px 0 0;
   }
 }
 
@@ -275,7 +275,7 @@
 }
 
 .card__body {
-  padding: 18px 20px 22px;
+  padding: 18px 20px 48px;
   position: relative;
 }
 
